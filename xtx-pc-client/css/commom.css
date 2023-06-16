@@ -1,0 +1,16 @@
+/* 各个页面相同的样式表 */ 
+/* 版心 */
+.wrapper{
+    width: 1240px;
+    margin:0 auto;
+}
+
+/* 快捷导航 */
+.shortcut{
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper{
+    
+}
