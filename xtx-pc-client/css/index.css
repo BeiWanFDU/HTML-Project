@@ -1,1 +1,256 @@
 /* index页面的样式表 */
+.banner{
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.banner .wrapper{
+    position: relative;
+    height: 500px;
+}
+
+.banner .aside{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.banner .aside li{
+    height: 50px;
+    line-height: 50px;
+}
+
+.banner .aside li a{
+    position: relative;
+    display: block;
+    height: 50px;
+    padding-left: 36px;
+    padding-right: 20px;
+    color: #fff;
+}
+
+.banner .aside li a span{
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.banner .aside li a:hover{
+    background-color: #27ba9b;
+}
+
+.banner .aside li a::after{
+    position: absolute;
+    top: 19px;
+    right: 19px;
+    content: '';
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -110px;
+}
+
+/* 箭头部分 */
+.prev,
+.next{
+    position: absolute;
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    background-image: url(../images/sprites.png);
+}
+
+.banner .prev{
+    left: 260px;
+    background-position: 15px -60px;
+}
+.banner .next{
+    right: 10px;
+    background-position: -22px -60px;
+}
+
+.banner ol{
+    position: absolute;
+    left: 680px;
+    bottom: 30px;
+    width: 200px;
+    height: 10px;
+}
+
+.banner ol li{
+    float: left;
+    margin-right: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255, 0.43);
+    cursor: pointer;
+}
+
+.banner ol .current{
+    background-color: rgba(255,255,255, 1);
+}
+
+/* 新鲜好物 */
+.goods .hd{
+    height: 114px;
+    line-height: 114px;
+}
+
+.goods .hd h2{
+    float: left;
+    font-size: 29px;
+    color: #333333;
+    font-weight: 400;
+    height: 114px;
+}
+
+.goods .hd h2 span{
+    font-size: 16px;
+    color: #999999;
+    margin-left: 34px;
+
+}
+
+.goods .hd a,
+.shengxian .hd .more{
+    float: right;
+    font-size: 16px;
+    color: #999999;
+}
+
+.goods .hd a::after,
+.shengxian .hd .more::after{
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+    margin-left: 13px;
+    vertical-align: middle;
+}
+
+.goods .bd li{
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    width: 304px;
+    height: 405px;
+    background-color: #f0f9f4;
+    text-align: center;
+}
+
+.goods .bd li:nth-child(4n){
+    margin-right: 0px;
+}
+
+.goods .bd li img{
+    width: 304px;
+}
+
+.goods .bd li h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333333;
+}
+
+.goods .bd li div,
+.shengxian .bd .right li div{
+    color: #9a2e1f;
+    font-size: 17px;
+}
+
+.goods .bd li div span,
+.shengxian .bd .right li div span{
+    font-size: 23px;
+}
+
+.goods .bd li b{
+    position: absolute;
+    left: 17px;
+    top: 18px;
+    width: 28px;
+    height: 51px;
+    border-radius: 2px;
+    border: 2px solid #27ba9b;
+    font-size: 18px;
+    color: #27ba9b;;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+/* 生鲜区域 */
+.shengxian .hd{
+    height: 96px;
+    line-height: 96px;
+}
+
+.shengxian .hd h2{
+    float: left;
+    font-size: 29px;
+    color: #333333;
+    font-weight: normal;
+}
+
+.shengxian .hd .more{
+    float: right;
+}
+
+.shengxian .hd ul{
+    float: right;
+    margin-right: 52px;
+}
+
+.shengxian .hd ul li{
+    float: left;
+}
+
+.shengxian .hd ul li a{
+    padding: 7px;
+    margin-right: 6px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.shengxian .hd ul li a:hover{
+    background-color: #27ba9b;
+    color: #fff;
+}
+
+.shengxian .bd .left{
+    float: left;
+    width: 240px;
+    height: 610px;
+}
+
+.shengxian .bd .right{
+    float: right;
+    width: 1000px;
+    height: 610px;
+    /* background-color: blue; */
+}
+
+.shengxian .bd .right li{
+    float: left;
+    margin-left: 8px;
+    margin-bottom: 3px;
+    width: 242px;
+    height: 304px;
+    text-align: center;
+}
+
+.shengxian .bd .right li img{
+    width: 184px;
+    margin: 8px 29px;
+}
+
+.shengxian .bd .right li p{
+    margin-left: 29px;
+}
+
