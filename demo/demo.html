@@ -6,19 +6,49 @@
     <title>Document</title>
     <link rel="stylesheet" href="./iconfont/iconfont.css">
     <style>
-        img{
-            width: 200px;
-            transform-origin: right bottom;
-            transition: all 2s;
+        *{
+            margin: 0;
+            padding: 0;
         }
-        img:hover{
-            transform: rotate(-360deg);
+        
+        .box{
+            display: flex;
+            /* 弹性盒子居中，中间无间距 */
+            justify-content: center;  
+            /* 间距在弹性盒子之间均匀分布，所有地方间距都相等 */
+            justify-content: space-evenly; 
+            /* 间距在弹性盒子的两侧，每个弹性盒子两侧都有相等的间距，视觉效果会造成盒子之间的间距稍大 */
+            justify-content: space-around; 
+            /* 间距分布在弹性盒子之间，盒子与父级无间距 */
+            justify-content: space-between;
+            /* align-items: center;
+            align-items: stretch; */
+
+
+            height: 200px;
+            border: 1px solid #000;
         }
 
+        .box div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        .box div:nth-child(1){
+            align-self: center
+            
+           ;
+        }
 
     </style>
 </head>
 <body>
-    <img src="./imgs/fm.jpg" alt="">
+    <div class="box">
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        
+    </div>
 </body>
 </html>
