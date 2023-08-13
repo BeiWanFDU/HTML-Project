@@ -133,13 +133,33 @@ body{
 
 .main .rest div{
     display: flex;
+    margin-bottom: 30px;
+}
+
+.main .rest div:last-child{
+    margin-bottom: 0px;
 }
 
 .main .rest div:nth-child(2n+1){
     justify-content: space-between;
 }
 
+.main .rest div:nth-child(2) h5{
+    margin-right: 20px;
+}
 
+.main .rest h5,
+.main .rest p{
+    font-size: 13px;
+    color: #262626;
+    font-weight: normal;
+}
+
+.main .rest div:nth-child(2) p{
+    /* line-height: 52px; */
+    font-size: 12px;
+    color: #989898;
+}
 
 
 
