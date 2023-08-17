@@ -1,0 +1,116 @@
+.xtx_body{
+    background-color: #f6f6f6;
+    padding: 30px 0 85px;
+}
+
+.xtx_body .wrapper{
+    display: flex;
+}
+
+.xtx_body .wrapper .aside{
+    width: 227px;
+    min-height: 500px;
+    margin-right: 18px;
+    background-color: pink;
+}
+
+.xtx_body .wrapper .main{
+    flex: 1;
+    min-height: 500px;
+    background-color: pink;
+}
+
+.xtx_body .wrapper .main .overview{
+    display: flex;
+    height: 130px;
+    background-color: white;
+    margin-bottom: 18px;
+    padding: 20px 0;
+}
+
+.xtx_body .wrapper .main .overview div{
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.xtx_body .wrapper .main .overview div:first-child{
+    border-right: 1px solid #f4f4f4;
+}
+
+
+.xtx_body .wrapper .main .overview div a img{
+    width: 25px;
+    margin-bottom: 10px;
+}
+
+.xtx_body .wrapper .main .overview div span{
+    color: #e05e30;
+    font-size: 25px;;
+}
+
+.xtx_body .wrapper .main .overview div p{
+    font-size: 16px;
+}
+
+.xtx_body .wrapper .main .overview div a:last-child img{
+    width: 18px;
+}
+
+.xtx_body .pannel{
+    padding: 28px 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.xtx_body .pannel .pannel_title{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.xtx_body .pannel .pannel_title h4{
+    font-size: 22px;
+    color: #333;
+    font-weight: 400;
+    font-family: PingFangSC-Regular;
+}
+
+.xtx_body .pannel .pannel_title a{
+    display: inline-block;
+    margin-top: 8px;
+    color: #999999;
+    font-size: 16px;
+}
+
+/* order */
+.xtx_body .wrapper .main .order .content li{
+    display: flex;
+    height: 137px;
+    border: 1px solid #f4f4f4;
+    margin-top: -1px;
+    margin-bottom: 20px;
+}
+
+.xtx_body .wrapper .main .order .content li:last-child{
+    margin-bottom:0;
+}
+
+.xtx_body .wrapper .main .order .content li .goods{
+    flex: 1;
+    margin-right: 120px;
+}
+.xtx_body .wrapper .main .order .content li .status{
+    width: 120px;
+}
+.xtx_body .wrapper .main .order .content li .pay{
+    width: 200px;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+}
+.xtx_body .wrapper .main .order .content li .action{
+    width: 180px;
+}
